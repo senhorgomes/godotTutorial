@@ -33,7 +33,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_vxn2j")
 }],
-"loop": false,
+"loop": true,
 "name": &"Idle",
 "speed": 8.0
 }]
@@ -47,6 +47,7 @@ radius = 5.0
 position = Vector2(0, -12)
 sprite_frames = SubResource("SpriteFrames_fwcjr")
 animation = &"Idle"
+autoplay = "Idle"
 frame = 3
 frame_progress = 1.0
 
