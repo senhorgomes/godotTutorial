@@ -553,5 +553,3 @@ theme_override_font_sizes/font_size = 8
 text = "This doesn't look
 too friendly..."
 horizontal_alignment = 1
-
-[node name="Music" type="AudioStreamPlayer2D" parent="."]
