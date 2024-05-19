@@ -1,11 +1,13 @@
-[gd_scene load_steps=13 format=3 uid="uid://dkv5lkbbro1hf"]
+[gd_scene load_steps=15 format=3 uid="uid://dkv5lkbbro1hf"]
 
 [ext_resource type="PackedScene" uid="uid://cipenbu3udles" path="res://scenes/playerScene.tscn" id="1_rsyc8"]
+[ext_resource type="Script" path="res://scripts/gamemanager.gd" id="1_uogvx"]
 [ext_resource type="Texture2D" uid="uid://b8ixmh7k15sb0" path="res://assests/sprites/world_tileset.png" id="2_aeq0m"]
 [ext_resource type="PackedScene" uid="uid://bsx1eauvlxlrl" path="res://scenes/platform.tscn" id="3_5hceu"]
 [ext_resource type="PackedScene" uid="uid://dqw1yf8au7o2k" path="res://scenes/coin.tscn" id="4_78elu"]
 [ext_resource type="PackedScene" uid="uid://ctgnjds8kcayv" path="res://scenes/killzone.tscn" id="5_5ivbw"]
 [ext_resource type="PackedScene" uid="uid://dns660dok1mm1" path="res://scenes/slime.tscn" id="6_q7y26"]
+[ext_resource type="FontFile" uid="uid://bm4bjs5ncvp8" path="res://assests/fonts/PixelOperator8.ttf" id="7_5brdh"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_iafnk"]
 texture = ExtResource("2_aeq0m")
@@ -453,6 +455,20 @@ _data = {
 
 [node name="Game" type="Node2D"]
 
+[node name="Game Manager" type="Node" parent="."]
+unique_name_in_owner = true
+script = ExtResource("1_uogvx")
+
+[node name="Coin counter" type="Label" parent="Game Manager"]
+offset_left = -134.0
+offset_top = -77.0
+offset_right = -48.0
+offset_bottom = -66.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_5brdh")
+theme_override_font_sizes/font_size = 8
+text = "Coins: 0"
+
 [node name="Player" parent="." instance=ExtResource("1_rsyc8")]
 position = Vector2(-1, 0)
 
@@ -513,3 +529,29 @@ autoplay = "move"
 
 [node name="Slime" parent="." instance=ExtResource("6_q7y26")]
 position = Vector2(231, -53)
+
+[node name="Labels" type="Node" parent="."]
+
+[node name="Label" type="Label" parent="Labels"]
+offset_left = -42.0
+offset_top = -37.0
+offset_right = 44.0
+offset_bottom = -26.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_5brdh")
+theme_override_font_sizes/font_size = 8
+text = "Space to Jump"
+
+[node name="Label2" type="Label" parent="Labels"]
+offset_left = 166.0
+offset_top = -85.0
+offset_right = 272.0
+offset_bottom = -66.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_5brdh")
+theme_override_font_sizes/font_size = 8
+text = "This doesn't look
+too friendly..."
+horizontal_alignment = 1
+
+[node name="Music" type="AudioStreamPlayer2D" parent="."]
