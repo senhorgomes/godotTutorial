@@ -6,6 +6,6 @@ extends Area2D
 #signals allow you to trigger a signal
 #masks are what the item receives, layer is where the item is located
 
-func _on_body_entered():
+func _on_body_entered(body):
 	game_manager.add_point()
 	animation_player.play("pickup")
