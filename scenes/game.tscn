@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://dkv5lkbbro1hf"]
+[gd_scene load_steps=20 format=3 uid="uid://dkv5lkbbro1hf"]
 
 [ext_resource type="PackedScene" uid="uid://cipenbu3udles" path="res://scenes/playerScene.tscn" id="1_rsyc8"]
 [ext_resource type="Script" path="res://scripts/gamemanager.gd" id="1_uogvx"]
@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://dns660dok1mm1" path="res://scenes/slime.tscn" id="6_q7y26"]
 [ext_resource type="FontFile" uid="uid://bm4bjs5ncvp8" path="res://assests/fonts/PixelOperator8.ttf" id="7_5brdh"]
 [ext_resource type="PackedScene" uid="uid://cqdq8gx5shrw6" path="res://scenes/platformYellow.tscn" id="8_7wtxd"]
+[ext_resource type="PackedScene" uid="uid://c2tq8xid50gph" path="res://scenes/endgoal.tscn" id="10_tm52w"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_iafnk"]
 texture = ExtResource("2_aeq0m")
@@ -662,3 +663,6 @@ theme_override_font_sizes/font_size = 8
 text = "This doesn't look
 too friendly..."
 horizontal_alignment = 1
+
+[node name="Endgoal" parent="." instance=ExtResource("10_tm52w")]
+position = Vector2(739, -17)
