@@ -433,7 +433,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_fkrjx"]
 resource_name = "move"
-length = 2.0
+length = 3.0
 loop_mode = 2
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -442,10 +442,10 @@ tracks/0/path = NodePath(".:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0.2, 1.8),
+"times": PackedFloat32Array(0.2, 2.8),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(37, -82), Vector2(37, -30)]
+"values": [Vector2(37, -82), Vector2(37, -5)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_0gre2"]
@@ -551,7 +551,13 @@ position = Vector2(-42, 31)
 position = Vector2(39, 31)
 
 [node name="Coin3" parent="Coins" instance=ExtResource("4_78elu")]
-position = Vector2(39, -69)
+position = Vector2(37, -69)
+
+[node name="Coin24" parent="Coins" instance=ExtResource("4_78elu")]
+position = Vector2(37, -88)
+
+[node name="Coin23" parent="Coins" instance=ExtResource("4_78elu")]
+position = Vector2(37, -49)
 
 [node name="Coin5" parent="Coins" instance=ExtResource("4_78elu")]
 position = Vector2(244, 28)
