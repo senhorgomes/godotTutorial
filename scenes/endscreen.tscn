@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://cejrwj5e2xkve"]
 
-[ext_resource type="Texture2D" uid="uid://bf8x6s1c6lcdr" path="res://assests/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3Y0MzgtdGFuZy0xNGEtY2hlcnJ5Ymxvc3NvbV8xLmpwZw.jpg" id="1_855eq"]
-[ext_resource type="Texture2D" uid="uid://4smt2nq5cgpv" path="res://assests/cooltext459233164486282.png" id="1_eil70"]
+[ext_resource type="Texture2D" uid="uid://bf8x6s1c6lcdr" path="res://assests/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3Y0MzgtdGFuZy0xNGEtY2hlcnJ5Ymxvc3NvbV8xLmpwZw.jpg" id="1_ak2c7"]
+[ext_resource type="Texture2D" uid="uid://4smt2nq5cgpv" path="res://assests/cooltext459233164486282.png" id="2_87ilc"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -9,22 +9,27 @@
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = -1.0
+offset_top = -22.0
+offset_right = 999.0
+offset_bottom = 645.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("1_855eq")
+scale = Vector2(1.14845, 1.14845)
+texture = ExtResource("1_ak2c7")
 
 [node name="Text" type="TextureRect" parent="."]
-anchors_preset = 8
+anchors_preset = 7
 anchor_left = 0.5
-anchor_top = 0.5
+anchor_top = 1.0
 anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -387.5
-offset_top = -58.5
-offset_right = 387.5
-offset_bottom = 58.5
+anchor_bottom = 1.0
+offset_left = 182.0
+offset_top = 291.0
+offset_right = 957.0
+offset_bottom = 408.0
 grow_horizontal = 2
-grow_vertical = 2
+grow_vertical = 0
 size_flags_horizontal = 4
 size_flags_vertical = 4
-texture = ExtResource("1_eil70")
+texture = ExtResource("2_87ilc")
