@@ -1,7 +1,17 @@
-[gd_scene format=3 uid="uid://c2tq8xid50gph"]
+[gd_scene load_steps=3 format=3 uid="uid://c2tq8xid50gph"]
+
+[ext_resource type="Texture2D" uid="uid://b8ixmh7k15sb0" path="res://assests/sprites/world_tileset.png" id="1_gmt6k"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p5yss"]
+size = Vector2(14, 14)
 
 [node name="Endgoal" type="Area2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_gmt6k")
+region_enabled = true
+region_rect = Rect2(129, 48, 14, 16)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 1)
+shape = SubResource("RectangleShape2D_p5yss")
